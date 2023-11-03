@@ -1,4 +1,4 @@
-const produtos = ["Produto 1", "Produto 2", "Produto 3"];
+import produtos from "../../components/Produtos";
 
 function Produtos() {
   return (

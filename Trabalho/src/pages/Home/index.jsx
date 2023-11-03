@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import produtos from "../../components/Produtos";
 
 function Home() {
   const [inputValue, setInputValue] = useState("");
-  const itens = ["tv", "geladeira", "celulares", "cama, mesa e banho"];
   const [pesquisa, setPesquisa] = useState("");
   const [resultado, setResultado] = useState([]);
   const handleChange = (e) => {
@@ -11,7 +11,7 @@ function Home() {
     const resultadoAtualizado =
       valorPesquisa === ""
         ? []
-        : itens.filter((item) => item.startsWith(valorPesquisa));
+        : produtos.filter((item) => item.startsWith(valorPesquisa));
     setResultado(resultadoAtualizado);
   };
 
